@@ -1,3 +1,5 @@
+
+
 class Carro:
     rodas = 4  # atributo de classe
     def __init__(self, marca, ano):
@@ -27,3 +29,17 @@ c2.rodas = 3
 print(c1.rodas)
 print(c2.rodas)
 
+
+
+
+class Veiculo:
+    def mover(self):
+        print("O veículo está se movendo")
+        
+v1 = Veiculo()
+v1.mover()
+
+class Carro(Veiculo):
+    pass
+
+c1 = Carro()
